@@ -32,15 +32,15 @@ jobs:
       - name: Prepare img folder
         run: |
           cd degrees-of-lewdity-plus/imagepacks
-          mkdir -p BEEESSS_Hikari_Female/img/                   #创建文件夹
-          # cp -r -f vanilla/* BEEESSS_Hikari_Female/img/       #原版图包
-          # cp -r -f dolp/* BEEESSS_Hikari_Female/img/          #DOLP图包
+          mkdir -p BEEESSS_Hikari_Female/img/                   # 创建文件夹
+          # cp -r -f vanilla/* BEEESSS_Hikari_Female/img/       # 原版图包
+          # cp -r -f dolp/* BEEESSS_Hikari_Female/img/          # DOLP图包
           cp -r -f b3s/* BEEESSS_Hikari_Female/img/
           cp -r -f kaervek/* BEEESSS_Hikari_Female/img/
-          # cp -r -f dolp_b3s/* BEEESSS_Hikari_Female/img/      #DOLP美化图包
+          # cp -r -f dolp_b3s/* BEEESSS_Hikari_Female/img/      # DOLP美化图包
           cp -r -f b3s_hikfem/* BEEESSS_Hikari_Female/img/
           cp -r -f b3s_hikfemsubs/* BEEESSS_Hikari_Female/img/
-          mv BEEESSS_Hikari_Female ../../BEEESSS_Hikari_Female  #移动回仓库默认路径下
+          mv BEEESSS_Hikari_Female ../../BEEESSS_Hikari_Female  # 移动回仓库默认路径下
 
       # Step 4: Set version and name
       - name: Set version
@@ -85,21 +85,21 @@ jobs:
       - name: Prepare img folder
         run: |
           cd degrees-of-lewdity-plus/imagepacks
-          mkdir -p BEEESSS_Wax/img/                              #创建文件夹
-          # cp -r -f vanilla/* BEEESSS_Wax/img/                  #原版图包
-          # cp -r -f dolp/* BEEESSS_Wax/img/                     #DOLP图包
+          mkdir -p BEEESSS_Wax/img/                              # 创建文件夹
+          # cp -r -f vanilla/* BEEESSS_Wax/img/                  # 原版图包
+          # cp -r -f dolp/* BEEESSS_Wax/img/                     # DOLP图包
           cp -r -f b3s/* BEEESSS_Wax/img/
           cp -r -f kaervek/* BEEESSS_Wax/img/
-          # cp -r -f dolp_b3s/* BEEESSS_Wax/img/                 #DOLP美化图包
+          # cp -r -f dolp_b3s/* BEEESSS_Wax/img/                 # DOLP美化图包
           cp -r -f b3s_wax/* BEEESSS_Wax/img/
-          mv BEEESSS_Wax ../../BEEESSS_Wax                       #移动回仓库默认路径下
+          mv BEEESSS_Wax ../../BEEESSS_Wax                       # 移动回仓库默认路径下
 
       # Step 4: Set version and name
       - name: Set version
         id: version_step
         run: |
           echo "MOD_VERSION_BW=$(date +'%y-%m-%d')" >> $GITHUB_ENV            # 设置版本号
-          echo "MOD_NAME_BW=BEEESSS_Wax" >> $GITHUB_ENV  # 设置模组名称
+          echo "MOD_NAME_BW=BEEESSS_Wax" >> $GITHUB_ENV                       # 设置模组名称
 
       # Step 5: Run Python script to package the folder
       - name: Run Python packaging script
@@ -137,19 +137,19 @@ jobs:
       - name: Prepare img folder
         run: |
           cd degrees-of-lewdity-plus/imagepacks
-          mkdir -p Goose_Female/img/                   #创建文件夹
-          # cp -r -f vanilla/* Goose_Female/img/       #原版图包
-          # cp -r -f dolp/* Goose_Female/img/          #DOLP图包
+          mkdir -p Goose_Female/img/                   # 创建文件夹
+          # cp -r -f vanilla/* Goose_Female/img/       # 原版图包
+          # cp -r -f dolp/* Goose_Female/img/          # DOLP图包
           cp -r -f goosefem/* Goose_Female/img/
           cp -r -f goosefemsubs/* Goose_Female/img/
-          mv Goose_Female ../../Goose_Female  #移动回仓库默认路径下
+          mv Goose_Female ../../Goose_Female           # 移动回仓库默认路径下
 
       # Step 4: Set version and name
       - name: Set version
         id: version_step
         run: |
           echo "MOD_VERSION_GF=$(date +'%y-%m-%d')" >> $GITHUB_ENV  # 设置版本号
-          echo "MOD_NAME_GF=Goose_Female" >> $GITHUB_ENV   # 设置模组名称
+          echo "MOD_NAME_GF=Goose_Female" >> $GITHUB_ENV            # 设置模组名称
 
       # Step 5: Run Python script to package the folder
       - name: Run Python packaging script
@@ -187,19 +187,19 @@ jobs:
       - name: Prepare img folder
         run: |
           cd degrees-of-lewdity-plus/imagepacks
-          mkdir -p Goose_Female_Mysterious/img/                     #创建文件夹
-          # cp -r -f vanilla/* Goose_Female_Mysterious/img/         #原版图包
-          # cp -r -f dolp/* Goose_Female_Mysterious/img/            #DOLP图包
+          mkdir -p Goose_Female_Mysterious/img/                     # 创建文件夹
+          # cp -r -f vanilla/* Goose_Female_Mysterious/img/         # 原版图包
+          # cp -r -f dolp/* Goose_Female_Mysterious/img/            # DOLP图包
           cp -r -f goosefem/* Goose_Female_Mysterious/img/
           cp -r -f goosefemsubs/* Goose_Female_Mysterious/img/
           cp -r -f mysterious/* Goose_Female_Mysterious/img/
-          mv Goose_Female_Mysterious ../../Goose_Female_Mysterious  #移动回仓库默认路径下
+          mv Goose_Female_Mysterious ../../Goose_Female_Mysterious  # 移动回仓库默认路径下
 
       # Step 4: Set version and name
       - name: Set version
         id: version_step
         run: |
-          echo "MOD_VERSION_GFM=$(date +'%y-%m-%d')" >> $GITHUB_ENV  # 设置版本号
+          echo "MOD_VERSION_GFM=$(date +'%y-%m-%d')" >> $GITHUB_ENV    # 设置版本号
           echo "MOD_NAME_GFM=Goose_Female_Mysterious" >> $GITHUB_ENV   # 设置模组名称
 
       # Step 5: Run Python script to package the folder
@@ -219,9 +219,66 @@ jobs:
           name: Goose_Female_Mysterious-package
           path: Goose_Female_Mysterious.zip
 
+  # Goose_Female_Mysterious_releaseBoobs
+  repack-GFMRB:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout current repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Clone external repository
+      - name: Clone external repository
+        run: |
+          git clone https://gitgud.io/Frostberg/degrees-of-lewdity-plus.git
+          cd degrees-of-lewdity-plus
+
+      # Step 3: Locate imagepacks and prepare img folder
+      - name: Prepare img folder
+        run: |
+          cd degrees-of-lewdity-plus/imagepacks
+          mkdir -p Goose_Female_Mysterious_releaseBoobs/img/                                  # 创建文件夹
+          # cp -r -f vanilla/* Goose_Female_Mysterious_releaseBoobs/img/                      # 原版图包
+          # cp -r -f dolp/* Goose_Female_Mysterious_releaseBoobs/img/                         # DOLP图包
+          cp -r -f goosefem/* Goose_Female_Mysterious_releaseBoobs/img/
+          cp -r -f goosefemsubs/* Goose_Female_Mysterious_releaseBoobs/img/
+          cp -r -f mysterious/* Goose_Female_Mysterious_releaseBoobs/img/
+          cd Goose_Female_Mysterious_releaseBoobs/img/body/breasts                            # 进入breasts目录
+          mv breasts3_released.png breasts3.png
+          mv breasts4_released.png breasts4.png
+          mv breasts5_released.png breasts5.png
+          mv breasts6_released.png breasts6.png
+          cd ../../../../                                                                     # 返回imagepacks目录
+          mv Goose_Female_Mysterious_releaseBoobs ../../Goose_Female_Mysterious_releaseBoobs  # 移动回仓库默认路径下
+
+      # Step 4: Set version and name
+      - name: Set version
+        id: version_step
+        run: |
+          echo "MOD_VERSION_GFMRB=$(date +'%y-%m-%d')" >> $GITHUB_ENV                 # 设置版本号
+          echo "MOD_NAME_GFMRB=Goose_Female_Mysterious_releaseBoobs" >> $GITHUB_ENV   # 设置模组名称
+
+      # Step 5: Run Python script to package the folder
+      - name: Run Python packaging script
+        run: |
+          cd Goose_Female_Mysterious_releaseBoobs
+          python3 ../python/Art_Mods_Actions.py --input img --output ${{ env.MOD_NAME_GFMRB }}.zip --version ${{ env.MOD_VERSION_GFMRB }}
+          mv Goose_Female_Mysterious_releaseBoobs.zip ../Goose_Female_Mysterious_releaseBoobs.zip
+        env:
+          MOD_NAME: ${{ env.MOD_NAME_GFMRB }}        # 传递 MOD_NAME 环境变量
+          MOD_VERSION: ${{ env.MOD_VERSION_GFMRB }}  # 传递 MOD_VERSION 环境变量
+
+      # Step 6: Upload artifact from workflow repack_GFMRB
+      - name: Upload artifact from workflow repack_GFMRB
+        uses: actions/upload-artifact@v4
+        with:
+          name: Goose_Female_Mysterious_releaseBoobs-package
+          path: Goose_Female_Mysterious_releaseBoobs.zip
+
   create-release:
     runs-on: ubuntu-latest
-    needs: [repack-BHF, repack-BW, repack-GF, repack-GFM]  # 完成依赖后开始
+    needs: [repack-BHF, repack-BW, repack-GF, repack-GFM, repack-GFMRB]  # 完成依赖后开始
 
     steps:
       - name: Checkout code
@@ -252,6 +309,11 @@ jobs:
         with:
           name: Goose_Female_Mysterious-package
 
+      - name: Download Goose_Female_Mysterious_releaseBoobs
+        uses: actions/download-artifact@v4
+        with:
+          name: Goose_Female_Mysterious_releaseBoobs-package
+
       # 生成SHA256
       - name: Calculate SHA256 for BEEESSS_Hikari_Female.zip
         id: sha256-BHF
@@ -277,6 +339,12 @@ jobs:
               sha256=$(shasum -a 256 Goose_Female_Mysterious.zip | awk '{print $1}')
               echo "SHA256_GFM=$sha256" >> $GITHUB_ENV
 
+      - name: Calculate SHA256 for Goose_Female_Mysterious_releaseBoobs.zip
+        id: sha256-GFMRB
+        run: |
+              sha256=$(shasum -a 256 Goose_Female_Mysterious_releaseBoobs.zip | awk '{print $1}')
+              echo "SHA256_GFM=$sha256" >> $GITHUB_ENV
+
       # 发布到Release
       - name: Create Release
         uses: softprops/action-gh-release@v1
@@ -292,6 +360,7 @@ jobs:
                 - BEEESSS_Wax.zip: `${{ env.SHA256_BW }}`
                 - Goose_Female.zip: `${{ env.SHA256_GF }}`
                 - Goose_Female_Mysterious.zip: `${{ env.SHA256_GFM }}`
+                - Goose_Female_Mysterious_releaseBoobs.zip: `${{ env.SHA256_GFMRB }}`
                 ## Verify Your Download
                 PowerShell: `certutil -hashfile [file] sha256`
                 Linux Terminal: `shasum -a 256 [file]` 
@@ -300,5 +369,6 @@ jobs:
                 BEEESSS_Wax.zip
                 Goose_Female.zip
                 Goose_Female_Mysterious.zip
+                Goose_Female_Mysterious_releaseBoobs.zip
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
