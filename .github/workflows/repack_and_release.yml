@@ -4,8 +4,8 @@ on:
   # 手动触发工作流
   workflow_dispatch:
   # 定时触发工作流 - 每天的12点（UTC +0）自动构建（CST 20:00）
-  schedule:
-    - cron: "0 12 * * *"
+  # schedule:
+  #   - cron: "0 12 * * *"
 
 permissions:
   contents: write
