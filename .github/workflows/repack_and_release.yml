@@ -314,7 +314,7 @@ jobs:
       - name: Download Goose_Female_Mysterious-RBS
         uses: actions/download-artifact@v4
         with:
-          name: Goose_Female_Mysterious_RBS-package
+          name: Goose_Female_Mysterious_BRS-package
 
       # 生成SHA256
       - name: Calculate SHA256 for BEEESSS_Hikari_Female.zip
