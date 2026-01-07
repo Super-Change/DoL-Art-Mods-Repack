@@ -275,8 +275,8 @@ jobs:
       - name: Upload artifact from workflow repack_GFM-RBS
         uses: actions/upload-artifact@v4
         with:
-          name: Goose_Female_Mysterious_BRS-package
-          path: Goose_Female_Mysterious_BRS.zip
+          name: Goose_Female_Mysterious_RBS-package
+          path: Goose_Female_Mysterious_RBS.zip
 
   create-release:
     runs-on: ubuntu-latest
@@ -314,7 +314,7 @@ jobs:
       - name: Download Goose_Female_Mysterious-RBS
         uses: actions/download-artifact@v4
         with:
-          name: Goose_Female_Mysterious_BRS-package
+          name: Goose_Female_Mysterious_RBS-package
 
       # 生成SHA256
       - name: Calculate SHA256 for BEEESSS_Hikari_Female.zip
