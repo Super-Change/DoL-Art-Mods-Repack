@@ -24,9 +24,14 @@ jobs:
 
       # Step 2: Clone external repository
       - name: Clone external repository
-        run: |
-          git clone https://gitgud.io/Frostberg/degrees-of-lewdity-plus.git
-          cd degrees-of-lewdity-plus
+        uses: nick-fields/retry@v4
+        with:
+          timeout_minutes: 10
+          retry_wait_seconds: 30
+          max_attempts: 5
+          command: |
+            git clone https://gitgud.io/Frostberg/degrees-of-lewdity-plus.git
+            cd degrees-of-lewdity-plus
 
       # Step 3: Locate imagepacks and prepare img folder
       - name: Prepare img folder
@@ -77,9 +82,14 @@ jobs:
 
       # Step 2: Clone external repository
       - name: Clone external repository
-        run: |
-          git clone https://gitgud.io/Frostberg/degrees-of-lewdity-plus.git
-          cd degrees-of-lewdity-plus
+        uses: nick-fields/retry@v4
+        with:
+          timeout_minutes: 10
+          retry_wait_seconds: 30
+          max_attempts: 5
+          command: |
+            git clone https://gitgud.io/Frostberg/degrees-of-lewdity-plus.git
+            cd degrees-of-lewdity-plus
 
       # Step 3: Locate imagepacks and prepare img folder
       - name: Prepare img folder
@@ -129,9 +139,14 @@ jobs:
 
       # Step 2: Clone external repository
       - name: Clone external repository
-        run: |
-          git clone https://gitgud.io/Frostberg/degrees-of-lewdity-plus.git
-          cd degrees-of-lewdity-plus
+        uses: nick-fields/retry@v4
+        with:
+          timeout_minutes: 10
+          retry_wait_seconds: 30
+          max_attempts: 5
+          command: |
+            git clone https://gitgud.io/Frostberg/degrees-of-lewdity-plus.git
+            cd degrees-of-lewdity-plus
 
       # Step 3: Locate imagepacks and prepare img folder
       - name: Prepare img folder
@@ -179,9 +194,14 @@ jobs:
 
       # Step 2: Clone external repository
       - name: Clone external repository
-        run: |
-          git clone https://gitgud.io/Frostberg/degrees-of-lewdity-plus.git
-          cd degrees-of-lewdity-plus
+        uses: nick-fields/retry@v4
+        with:
+          timeout_minutes: 10
+          retry_wait_seconds: 30
+          max_attempts: 5
+          command: |
+            git clone https://gitgud.io/Frostberg/degrees-of-lewdity-plus.git
+            cd degrees-of-lewdity-plus
 
       # Step 3: Locate imagepacks and prepare img folder
       - name: Prepare img folder
@@ -230,9 +250,14 @@ jobs:
 
       # Step 2: Clone external repository
       - name: Clone external repository
-        run: |
-          git clone https://gitgud.io/Frostberg/degrees-of-lewdity-plus.git
-          cd degrees-of-lewdity-plus
+        uses: nick-fields/retry@v4
+        with:
+          timeout_minutes: 10
+          retry_wait_seconds: 30
+          max_attempts: 5
+          command: |
+            git clone https://gitgud.io/Frostberg/degrees-of-lewdity-plus.git
+            cd degrees-of-lewdity-plus
 
       # Step 3: Locate imagepacks and prepare img folder
       - name: Prepare img folder
