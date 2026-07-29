@@ -39,11 +39,22 @@ jobs:
         run: |
           set -euo pipefail
 
-          imagepacks="$SOURCE_DIR/imagepacks"
+          if [[ -d "$SOURCE_DIR/img/imagepacks" ]]; then
+            imagepacks="$SOURCE_DIR/img/imagepacks"
+          elif [[ -d "$SOURCE_DIR/imagepacks" ]]; then
+            imagepacks="$SOURCE_DIR/imagepacks"
+          else
+            echo "::error::Could not find upstream imagepacks directory at $SOURCE_DIR/img/imagepacks or $SOURCE_DIR/imagepacks"
+            exit 1
+          fi
 
           copy_pack() {
             local pack="$1"
             local target="$2"
+            if [[ ! -d "$imagepacks/$pack" ]]; then
+              echo "::error::Could not find image pack '$pack' in $imagepacks"
+              exit 1
+            fi
             cp -r -f "$imagepacks/$pack"/. "$target/img/"
           }
 
