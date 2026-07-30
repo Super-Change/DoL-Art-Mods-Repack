@@ -74,11 +74,6 @@ jobs:
             b3s_hikfem \
             b3s_hikfemsubs
 
-          prepare_variant BEEESSS_Wax \
-            b3s \
-            kaervek \
-            b3s_wax
-
           prepare_variant Goose_Female \
             goosefem \
             goosefemsubs
@@ -106,7 +101,6 @@ jobs:
           }
 
           package_variant BEEESSS_Hikari_Female
-          package_variant BEEESSS_Wax
           package_variant Goose_Female
           package_variant Goose_Female_Mysterious
 
@@ -139,13 +133,11 @@ jobs:
           set -euo pipefail
 
           sha256_bhf=$(shasum -a 256 BEEESSS_Hikari_Female.zip | awk '{print $1}')
-          sha256_bw=$(shasum -a 256 BEEESSS_Wax.zip | awk '{print $1}')
           sha256_gf=$(shasum -a 256 Goose_Female.zip | awk '{print $1}')
           sha256_gfm=$(shasum -a 256 Goose_Female_Mysterious.zip | awk '{print $1}')
 
           {
             echo "SHA256_BHF=$sha256_bhf"
-            echo "SHA256_BW=$sha256_bw"
             echo "SHA256_GF=$sha256_gf"
             echo "SHA256_GFM=$sha256_gfm"
           } >> "$GITHUB_ENV"
@@ -161,7 +153,6 @@ jobs:
             ${{ env.RELEASE_DATE }}
             ## File SHA256 Checksums
             - BEEESSS_Hikari_Female.zip: `${{ env.SHA256_BHF }}`
-            - BEEESSS_Wax.zip: `${{ env.SHA256_BW }}`
             - Goose_Female.zip: `${{ env.SHA256_GF }}`
             - Goose_Female_Mysterious.zip: `${{ env.SHA256_GFM }}`
             ## Verify Your Download
@@ -169,7 +160,6 @@ jobs:
             Linux Terminal: `shasum -a 256 [file]`
           files: |
             BEEESSS_Hikari_Female.zip
-            BEEESSS_Wax.zip
             Goose_Female.zip
             Goose_Female_Mysterious.zip
         env:
